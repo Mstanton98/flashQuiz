@@ -6,8 +6,8 @@ const jwt = require('jsonwebtoken');
 const express = require('express');
 const knex = require('../knex');
 const { camelizeKeys } = require('humps');
-const ev = require('express-validation');
-const validations = require('../validations/token');
+// const ev = require('express-validation');
+// const validations = require('../validations/token');
 
 const router = express.Router();
 
