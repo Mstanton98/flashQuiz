@@ -10,13 +10,19 @@ const config = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
+  watch: true,
   module: {
     loaders: [
       {
         test: /\.jsx?/,
         include: APP_DIR,
         loader: 'babel-loader'
-      }
+      },
+      {
+        test: /\.css$/,
+        include: APP_DIR,
+        loader: 'style-loader!css-loader'
+      },
     ]
   }
 };
